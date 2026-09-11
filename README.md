@@ -1,6 +1,6 @@
 # CE-RISE Life Cycle Inventory Dataset
 
-[![DOI](https://zenodo.org/badge/DOI/TOBEOBTAINED.svg)](https://doi.org/TOBEOBTAINED) [![Schemas](https://img.shields.io/badge/Schema%20Files-LinkML%2C%20JSON%2C%20SHACL%2C%20OWL-32CD32)](https://ce-rise-models.codeberg.page/lci-dataset/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281%2Fzenodo.22710170.svg)](https://doi.org/10.5281/zenodo.22710170) [![Schemas](https://img.shields.io/badge/Schema%20Files-LinkML%2C%20JSON%2C%20SHACL%2C%20OWL-32CD32)](https://ce-rise-models.codeberg.page/lci-dataset/)
 
 This repository defines the CE-RISE data model for reusable life cycle inventory datasets. It represents dataset metadata, activities, flows, flow objects, activity types, locations, temporal scopes, lifecycle stages, classifications, quantitative exchange data, and versioned source records. It provides reusable inventory data without defining a calculation-specific Product System or life cycle assessment result.
 

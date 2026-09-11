@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: CE-RISE Life Cycle Inventory Dataset Data Model
 type: software
-doi: xxx_to_be_obtained_xxx
+doi: 10.5281/zenodo.22710170
 authors:
   - given-names: Riccardo
     family-names: Boero
@@ -25,7 +25,7 @@ authors:
     affiliation: Empa
 identifiers:
   - type: doi
-    value: xxx_to_be_obtained_xxx
+    value: 10.5281/zenodo.22710170
     description: This DOI represents all versions of the CE-RISE Life Cycle Inventory Dataset Data Model.
 repository-code: 'https://codeberg.org/CE-RISE-models/lci-dataset'
 url: 'https://ce-rise-models.codeberg.page/lci-dataset/'
