@@ -10,7 +10,7 @@ This repository defines the CE-RISE data model for reusable life cycle inventory
 
 ## Data Model Structure
 
-The Life Cycle Inventory Dataset data model defines reusable life cycle inventory data. It uses BONSai semantic mappings for activities, flows, flow objects, and activity types; OM 2 mappings for measures and units; SKOS for classifications and lifecycle stages; Schema.org for locations; and PROV-O for source-record provenance. ORIONT concepts for flow direction, flow location, reference year, and validity year are represented locally because no stable machine-readable ORIONT import is available.
+The Life Cycle Inventory Dataset data model defines reusable life cycle inventory data. It uses BONSAI semantic mappings for activities, flows, flow objects, and activity types; OM 2 mappings for measures and units; SKOS for classifications and lifecycle stages; Schema.org for locations; and PROV-O for source-record provenance. ORIONT concepts for flow direction, flow location, reference year, and validity year are represented locally because no stable machine-readable ORIONT import is available.
 
 ### Key Design Principles
 
@@ -24,6 +24,8 @@ The Life Cycle Inventory Dataset data model defines reusable life cycle inventor
 - **CE-RISE conventions**: Classes use direct LinkML attributes; semantic mappings use `class_uri` and `owl.filler` annotations; and stored values use unique `sql_identifier` annotations.
 
 ### Model Boundaries Within CE-RISE Architecture
+
+Within CE-RISE, `lci-dataset` owns reusable inventory data; `product-system` defines a calculation-specific assembly of selected LCI datasets and activities; and `integrated-lca` represents assessment inputs, methods, results, interpretation, and reporting.
 
 **This model includes:**
 - Reusable foreground, background, and hybrid life cycle inventory datasets
@@ -104,13 +106,13 @@ Every stored value and permissible value has a unique `sql_identifier` annotatio
 | Step | Component | Criticalities Identified | Solutions Implemented | Status | Missing/TODO |
 |------|-----------|-------------------------|----------------------|--------|--------------|
 | **1** | **LCIDataset and Scope** | Reusable inventory data requires its own versioned ownership boundary, separate from Product System assembly | Versioned `LCIDataset` root with declared inventory scope | **COMPLETED** | - |
-| **2** | **Inventory Graph** | Activities, exchanges, foreground data, circular flows, and background references need consistent representation | BONSai-aligned activities, flows, flow objects, activity types, input/output relations, counterpart activities, and direct flow measures | **COMPLETED** | - |
+| **2** | **Inventory Graph** | Activities, exchanges, foreground data, circular flows, and background references need consistent representation | BONSAI-aligned activities, flows, flow objects, activity types, input/output relations, counterpart activities, and direct flow measures | **COMPLETED** | - |
 | **3** | **Context, Classifications, and Sources** | Inventory exchanges need temporal, geographic, lifecycle-stage, classification, and reproducible source context | Location, temporal scope, ORIONT-compatible direction and years, SKOS concepts, and PROV-O-aligned source records | **COMPLETED** | - |
 | **4** | **Cross-Cutting Utility Integration** | Inventory data needs optional uncertainty, traceability, and quality information | Schema-level utility links where applicable, without changing the minimum inventory record | **COMPLETED** | - |
 
 ### Integration Opportunities
 
-- **BONSai**: Activity, flow, flow-object, activity-type, determining-flow, input, output, location, and temporal semantics
+- **BONSAI**: Activity, flow, flow-object, activity-type, determining-flow, input, output, location, and temporal semantics
 - **OM 2**: Direct numerical values and units for flows
 - **ORIONT**: Flow direction, flow location, lifecycle-stage context, reference year, and validity year concepts
 - **SKOS**: Lifecycle-stage, elementary-flow-compartment, and external classification concepts
