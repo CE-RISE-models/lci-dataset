@@ -1,0 +1,24 @@
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/linkml/generators/owlgen.py:244: DeprecationWarning: [owlgen-skip-vacuous-min-zero-cardinality-default] DEPRECATED
+The default for `skip_vacuous_min_zero_cardinality_axioms` in `OwlSchemaGenerator` will change from `False` to `True` in a future release.
+Deprecated In: 1.10.0
+Recommendation: Set `skip_vacuous_min_zero_cardinality_axioms=True` to suppress vacuous axioms, or set it explicitly to `False` to preserve current behaviour and silence this warning.
+See: https://github.com/linkml/linkml/issues/3190
+  deprecation_warning("owlgen-skip-vacuous-min-zero-cardinality-default")
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/linkml/generators/owlgen.py:247: DeprecationWarning: [owlgen-skip-vacuous-local-range-default] DEPRECATED
+The default for `skip_vacuous_local_range_axioms` in `OwlSchemaGenerator` will change from `False` to `True` in a future release.
+Deprecated In: 1.10.0
+Recommendation: Set `skip_vacuous_local_range_axioms=True` to suppress vacuous axioms, or set it explicitly to `False` to preserve current behaviour and silence this warning.
+See: https://github.com/linkml/linkml/issues/3190
+  deprecation_warning("owlgen-skip-vacuous-local-range-default")
+/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/linkml/generators/owlgen.py:250: DeprecationWarning: [owlgen-consolidate-cardinality-axioms-default] DEPRECATED
+The default for `consolidate_cardinality_axioms` in `OwlSchemaGenerator` will change from `False` to `True` in a future release.
+Deprecated In: 1.10.0
+Recommendation: Set `consolidate_cardinality_axioms=True` to emit consolidated axioms, or set it explicitly to `False` to preserve current behaviour and silence this warning.
+See: https://github.com/linkml/linkml/issues/3191
+  deprecation_warning("owlgen-consolidate-cardinality-axioms-default")
+WARNING:linkml.generators.owlgen:Ambiguous attribute: source_record_references https://ce-rise-models.codeberg.page/lci-dataset/source_record_references
+WARNING:linkml.generators.owlgen:Ambiguous attribute: lifecycle_stage_reference https://ce-rise-models.codeberg.page/lci-dataset/lifecycle_stage_reference
+WARNING:linkml.generators.owlgen:Ambiguous attribute: source_record_references https://ce-rise-models.codeberg.page/lci-dataset/source_record_references
+WARNING:linkml.generators.owlgen:Ambiguous attribute: lifecycle_stage_reference https://ce-rise-models.codeberg.page/lci-dataset/lifecycle_stage_reference
+WARNING:linkml.generators.owlgen:Ambiguous attribute: source_record_references https://ce-rise-models.codeberg.page/lci-dataset/source_record_references
+WARNING:linkml.generators.owlgen:Ambiguous attribute: source_record_references https://ce-rise-models.codeberg.page/lci-dataset/source_record_references
