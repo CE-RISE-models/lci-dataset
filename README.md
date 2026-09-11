@@ -16,7 +16,7 @@ The Life Cycle Inventory Dataset data model defines reusable life cycle inventor
 
 - **Reusable inventory data**: An `LCIDataset` owns activities and flows that can support multiple Product System assemblies.
 - **Graph-based representation**: Activities and flows represent transformations, external background connections, product exchanges, waste exchanges, and elementary interventions.
-- **Direct quantity representation**: BONSai `Flow` records use OM 2 numerical-value and unit fields.
+- **Direct quantity representation**: BONSAI `Flow` records use OM 2 numerical-value and unit fields.
 - **Reference-only provenance**: CE-RISE records, external datasets, artifacts, versions, and mappings are referenced rather than duplicated in the inventory dataset.
 - **Assessment independence**: Product System assembly, functional units, assessment methods, impact indicators, LCIA results, and result partitions remain outside this model.
 - **Controlled extensibility**: Flow types, lifecycle stages, classifications, locations, and units can reference external schemes instead of hardcoding a single vocabulary.
