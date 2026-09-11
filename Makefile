@@ -13,9 +13,9 @@ generated/shacl.ttl: model/model.yaml
 generated/model.ttl: model/model.yaml
 	mkdir -p generated
 	# OWL generation produces Turtle format, so name it .ttl
-	linkml generate owl model/model.yaml --no-metaclasses > generated/model.ttl 2>&1 || \
+	linkml generate owl model/model.yaml --no-metaclasses > generated/model.ttl 2> generated/model-owl.log || \
 		(echo "Error generating OWL, trying without imports..."; \
-		 linkml generate owl model/model.yaml --no-metaclasses --no-imports > generated/model.ttl 2>&1 || \
+		 linkml generate owl model/model.yaml --no-metaclasses --no-imports > generated/model.ttl 2>> generated/model-owl.log || \
 		 (echo "OWL generation failed, creating placeholder"; \
 		  echo "# OWL generation failed - check model syntax" > generated/model.ttl))
 	@echo "Generated OWL: $$(wc -l < generated/model.ttl) lines"
